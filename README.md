@@ -50,8 +50,6 @@
 - Uses [validator.js](https://www.npmjs.com/package/validator) for validating and sanitizing strings, such as emails, URLs, and ISBNs.
 - Uses [Vercel](https://vercel.com/) for deploying and hosting the application with automatic scaling and CI/CD support
 
-
-
 ## Technologies Used
 
 - ![TypeScript](https://img.shields.io/badge/typescript-333333?logo=typescript&logoColor=3178C6)
@@ -62,8 +60,73 @@
 - ![Vercel](https://img.shields.io/badge/Vercel-333333?logo=vercel&logoColor=%23ffffff)
 - ![GitHub](https://img.shields.io/badge/GitHub-333333?logo=github&logoColor=%23ffffff)
 
+## 🛠️ Installation & Setup Instructions
+
+Follow the steps below to set up the **NextProduct** application locally:
+
+---
+
+### 1. Clone the Repositories
+
+```bash
+git clone https://github.com/Arman3747/Library_Management_API.git
+
+```
+
+---
+
+### 2. Setup
+
+```bash
+cd Library_Management_API
+npm init --y
+```
+
+Create a `.env.local` file in the root of the folder and add the following:
+
+```env
+##MongoDB_Credential
+MONGODB_URI=mongodb_uri_with_userName_and_password
+```
+
+Then start the server:
+
+```bash
+npm run dev
+```
+
+Open http://localhost:5000 in your browser.
+
+---
+
+## **Route Summary**
+
+```md
+# API Route Summary
+
+| Route                                                              | Method | Description                       |
+| ------------------------------------------------------------------ | ------ | --------------------------------- |
+| `/api/books`                                                       | POST   | Create a new Book                 |
+| `/api/books`                                                       | GET    | Get All Books                     |
+| `/api/books?filter=NON_FICTION&sortBy=createdAt&sort=desc&limit=5` | GET    | Get All Books Based on the Search |
+| `/api/books/:bookId`                                               | GET    | Get Book by ID                    |
+| `/api/books/:bookId`                                               | PATCH  | Update Book                       |
+| `/api/books/:bookId`                                               | DELETE | Delete a Book                     |
+| `/api/borrow`                                                      | POST   | Borrow a Book                     |
+| `/api/borrow`                                                      | GET    | Borrowed Books Summary            |
+```
 
 
+## Deployment
+
+1. Push the code to GitHub.
+2. Connect your repository to [Vercel](https://vercel.com/).
+3. Set environment variables in Vercel dashboard.
+4. Deploy the site. Live URL will be generated automatically.
+
+---
+
+### Thank you for Reading!
 
 
 
