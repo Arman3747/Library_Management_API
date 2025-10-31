@@ -84,7 +84,7 @@ cd Library_Management_API
 npm init --y
 ```
 
-Create a `.env.local` file in the root of the folder and add the following:
+Create a `.env` file in the root of the folder and add the following:
 
 ```env
 ##MongoDB_Credential
