@@ -29,7 +29,6 @@ bookRoutes.post("/books", async (req: Request, res: Response) => {
     //     message: err.message,
     //   }));
 
-      // console.log(error, "zod");
       return res.status(400).json({
         message: "Validation failed 01",
         success: false,
@@ -39,7 +38,6 @@ bookRoutes.post("/books", async (req: Request, res: Response) => {
 
     // Mongoose validation errors
     if (error.name === "ValidationError") {
-      // console.log(error);
       return res.status(400).json({
         name: error.name,
         message: "Validation failed 02",

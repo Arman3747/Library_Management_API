@@ -48,6 +48,7 @@
 - Uses [Mongoose.js](https://mongoosejs.com/) for object modeling, schema enforcement, and easy interaction with MongoDB.
 - Uses [Zod](https://zod.dev/) for runtime schema validation and ensuring request data integrity.
 - Uses [validator.js](https://www.npmjs.com/package/validator) for validating and sanitizing strings, such as emails, URLs, and ISBNs.
+- Uses [.ENV](https://www.npmjs.com/package/dotenv) for loading environment variables from a .env file to securely manage configuration settings like database URLs, API keys, and ports.
 - Uses [Vercel](https://vercel.com/) for deploying and hosting the application with automatic scaling and CI/CD support
 
 ## Technologies Used
@@ -57,6 +58,7 @@
 - ![MongoDB](https://img.shields.io/badge/MongoDB-v6.20.00-155dfc?logo=mongodb&logoColor=%2347A248)
 - ![Mongoose.js](https://img.shields.io/badge/Mongoose.js-v8.19.02-155dfc?logo=mongoose&logoColor=%23880000)
 - ![Zod](https://img.shields.io/badge/Zod-v4.1.12-155dfc?logo=zod&logoColor=%23408AFF)
+- ![.ENV](https://img.shields.io/badge/.ENV-v17.2.3-155dfc?logo=dotenv&logoColor=%23ECD53F)
 - ![Vercel](https://img.shields.io/badge/Vercel-333333?logo=vercel&logoColor=%23ffffff)
 - ![GitHub](https://img.shields.io/badge/GitHub-333333?logo=github&logoColor=%23ffffff)
 

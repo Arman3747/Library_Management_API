@@ -50,7 +50,6 @@ borrowRoutes.post("/borrow", async (req: Request, res: Response) => {
     });
   } catch (error: any) {
     if (error instanceof z.ZodError) {
-      console.log(error);
       return res.status(400).json({
         success: false,
         message: "Validation failed",
